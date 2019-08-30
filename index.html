@@ -1,59 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <title>Mandatos</title>
-</head>
-<body style="" class="valign-wrapper grey">
-    <div class="container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
 
-        <div class="row white-text center-align grey" style="padding-bottom: 20px;">
-            <div class="col s12"  style="background-image: url('img/bg2.jpg');background-repeat: no-repeat;background-position: center;background-size: cover; padding-bottom: 20px;">
-                <h2 style="text-shadow: 0px 0px 10px black;">PORTAFOLIO</h2>
-                <img src="img/foto de perfil.jpg" class="circle responsive-img" alt="Foto de perfil Daniel Alfonso Jiménez Suárez" title="Daniel Alfonso Jiménez Suárez" style="max-height: 200px;">
-                <div><span style="text-shadow: 0px 0px 10px black; background-color: gray; padding: 0.1em;">Ingeniero en Sistemas Computacionales</span><br></div>
-                <div><span style="text-shadow: 0px 0px 10px black; background-color: gray; padding: 0.1em;">Desarrollador web</span></div>
-            </div>
-            <h3 style="text-shadow: 0px 0px 10px black;">MIS TRABAJOS</h3>
-            <div class="row">
-                <div class="col s12 m4 l4 offset-m4 black-text">
-                    <div class="card" style="padding: 10px;">
-                            <h5>VETERINARIA EL CORRAL</h5>
-                            <img src="img/logo2.svg">
-                            <p>Página web para la veterinaria el corral Tenosique, Tabasco.</p>
-                            <a class="btn" href="https://veterinariaelcorral.com">VER PROYECTO</a>
-                    </div>
-                </div>   
-    
-                <div class="col s12 m4 l4 offset-m4 black-text">
-                    <div class="card" style="padding: 10px;">
-                            <h5>NCEI</h5>
-                            <img src="img/logo.svg">
-                            <p>Sistema de control de acceso para el NCIE, como proyecto de residecia profesional</p>
-                            <p>usuario: test@gmail.com <br> password: 1234</p>
-                            <a class="btn" href="https://residenciancie.herokuapp.com/">VER PROYECTO</a>
-                    </div>
-                </div>
-                <div class="col s12 m4 l4 offset-m4 black-text">
-                    <div class="card" style="padding: 10px;">
-                        <h5>COMPILADOR SOBRE EL LENGUAJE PHP</h5>
-                        <div>Trabajo para la materia de automatas, lee entradas de lineas en PHP, las intepretan dando salida a tokens, genera tripletas optimizadas del código, de igual manera simula poco de codigo en ensamblador</div>
-                        <img class="responsive-img" src="img/compiler.jpg">
-                        <a class="btn" href="https://mandatos.000webhostapp.com/">VER PROYECTO</a>
-                    </div>
-                </div>  
+    <title>elmandatos - Portafolio</title>
+</head>
+
+<body>
+    <div id="top" class="col s12 l12 valign-wrapper center-align" style="height: 100vh;background-image: url('img/bg-coffe.png');background-position: center; background-size:cover;;padding: 10px;">
+        <div style="margin: auto" id="intro">
+            <img src="img/foto de perfil.jpg" class="circle responsive-img"
+                alt="Foto de perfil Daniel Alfonso Jiménez Suárez" title="Daniel Alfonso Jiménez Suárez"
+                style="max-height: 200px;">
+            <div>
+                <p>
+                    <h5>DANIEL ALFONSO JIMÉNEZ SUÁREZ</h5>
+                    <h6>• DESARROLLADOR WEB •</h6>
+                    <h6><i class="far fa-envelope"></i> work.daniel.js@gmail.com</h6>
+                </p>
+                <p>
+                </p>
+                <a href="https://github.com/elmandatos" target="_blank">
+                    <i class="fab fa-github fa-2x"></i><br>
+                    <span>GITHUB</span>
+                </a><br><br><br><br><br>
+
+                <a href="#proyectos">
+                    <span>PROYECTOS</span><br>
+                    <i class="fas fa-arrow-circle-down fa-2x"></i>
+                </a>
+
             </div>
         </div>
     </div>
 
 
- <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <div class="parallax-container" style="height: 30vh">
+        <div class="parallax"><img src="img/bg-coffe-code.jpg">
+            
+        </div>
+    </div>
+
+    <h5 class="center-align" id="proyectos">PROYECTOS</h5>
+    
+    <section class="container" id="proyects-container">
+       
+       
+        <article class="row card hoverable" style="margin:30px 0px 30px 0px;padding: 10px;">
+            <div class="col s12 m6">
+                <img class="responsive-img" src="img/el-corral.png" alt="">
+            </div>
+            <div class="col s12 m6" >
+                
+                <div class="proyect-info">
+                    <h5 class="grey-text text-darken-1"><b>EL CORRAL</b></h5>
+                    <p style="text-align: justify;">Página de farmacia veterinaria usando el framework backend Laravel, CSS framework materialize.</p>
+                    <p>
+                        <span class="grey lighten-2 grey-text text-darken-1"><b>Laravel</b></span>
+                        <span class="grey lighten-2 grey-text text-darken-1"><b>PHP</b></span>
+                        <span class="grey lighten-2 grey-text text-darken-1"><b>Javascript</b></span>
+                    </p>
+                </div>
+
+
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col s12 m6 l6 center-align" style="margin-top: 10px;">
+                        <a class="" href="https://veterinariaelcorral.com" target="_blank" >
+                            <b>
+                                <i class="far fa-eye"></i> Ver Sitio
+                            </b>
+                        </a>
+
+                    </div>
+                    <div class="col s12 m6 l6 center-align" style="margin-top: 10px;">
+                        <a class="grey-text">
+                            <b>
+                                <i class="fab fa-github"></i> Repositorio privado
+                            </b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="row card hoverable" style="margin:30px 0px 30px 0px;padding: 10px;">
+            <div class="col s12 m6">
+                <img class="responsive-img" src="img/ncie.png" alt="">
+            </div>
+            <div class="col s12 m6">
+        
+                <div class="proyect-info">
+                    <h5 class="grey-text text-darken-1"><b>NCIE</b></h5>
+                    <p style="text-align: justify;">Sistema de control de acceso a usuarios al Nodo Creativo para la Innovación y el Emprendimiento. Proyecto de residecia profecional en el Instituto Tecnológico de Mérida.</p>
+                    <p>
+                        <span class="grey lighten-2 grey-text text-darken-1"><b>Laravel</b></span>
+                        <span class="grey lighten-2 grey-text text-darken-1"><b>PHP</b></span>
+                        <span class="grey lighten-2 grey-text text-darken-1"><b>Javascript</b></span>
+                    </p>
+                </div>
+        
+        
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col s12 m6 l6 center-align" style="margin-top: 10px;">
+                        <a class="" href="https://residenciancie.herokuapp.com/" target="_blank">
+                            <b>
+                                <i class="far fa-eye"></i> Ver Sitio
+                            </b>
+                        </a>
+        
+                    </div>
+                    <div class="col s12 m6 l6 center-align" style="margin-top: 10px;">
+                        <a href="https://github.com/elmandatos/NCIE" target="_blank">
+                            <b>
+                                <i class="fab fa-github"></i> Ver Repositorio
+                            </b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="row card hoverable" style="margin:30px 0px 30px 0px;padding: 10px;">
+            <div class="col s12 m6">
+                <img class="responsive-img" src="img/compilador.png" alt="Preview de dispositivos de simulador de compilador en php">
+            </div>
+            <div class="col s12 m6">
+        
+                <div class="proyect-info">
+                    <h5 class="grey-text text-darken-1"><b>SIMULADOR DE COMPILADOR PHP</b></h5>
+                    <p style="text-align: justify;">Simula compilar instrucciones de php, declaraciones de variables, operaciones aritmeticas, etc. Genera tokens a partir de las instrucciones ingresadas.</p>
+                    <p>
+                        <span class="grey lighten-2 grey-text text-darken-1"><b>PHP</b></span>
+                    </p>
+                </div>
+        
+        
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col s12 m6 l6 center-align" style="margin-top: 10px;">
+                        <a class="" href="https://mandatos.000webhostapp.com/" target="_blank">
+                            <b>
+                                <i class="far fa-eye"></i> Ver Sitio
+                            </b>
+                        </a>
+        
+                    </div>
+                    <div class="col s12 m6 l6 center-align" style="margin-top: 10px;">
+                        <a href="https://github.com/elmandatos/CompiladorPHP" target="_blank">
+                            <b>
+                                <i class="fab fa-github"></i> Ver Repositorio
+                            </b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+
+    </section>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large grey" href="#top">
+        <i class="large material-icons">arrow_upward</i>
+    </a>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+<script>
+    M.AutoInit();
+
+
+    $(document).ready(function () {
+        $('.parallax').parallax();
+    });
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
+
+</script>
 </body>
+
 </html>
+
+
+
